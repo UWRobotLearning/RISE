@@ -1,0 +1,50 @@
+name: ood_sim
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.14
+  - cudatoolkit=11.8
+  - pytorch-cuda=11.8
+  - torchvision
+  - cmake
+  - pybind11
+  - py
+  - pip
+  - mesalib # neede for offline renderer on hyak
+  # for diffusion
+  - dill 
+  - einops
+  - zarr
+  - threadpoolctl=3.1.0
+  - av
+  - diffusers
+  - pip:
+    - gymnasium
+    - mujoco==3.0.0
+    - dm-robotics-moma
+    - mujoco-python-viewer
+    - hydra-core==1.3.2
+    - wandb
+    - tensorboard
+    - stable_baselines3[extra]
+    - submitit
+    - hydra-submitit-launcher
+    - moviepy
+    - imageio
+    - tabulate
+    - gym==0.26.2
+    - imagecodecs
+    - gitpython
+    - dvc[ssh]
+    # stable contrastive jax stuff
+    # - jax[cuda12]
+    # - flax
+    # - optax
+    # - chex
+    # - tensorflow
+    # - tf-keras
+    # - overrides
+    # - ml_collections

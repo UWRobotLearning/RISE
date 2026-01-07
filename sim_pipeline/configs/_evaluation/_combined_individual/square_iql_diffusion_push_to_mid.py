@@ -1,0 +1,14 @@
+from dataclasses import dataclass
+from sim_pipeline.configs._evaluation.eval_base import EvaluationConfig
+from sim_pipeline.configs.env.base import BaseEnvConfig
+from sim_pipeline.configs.env.robomimic_square import RobomimicSquareEnvConfig
+from sim_pipeline.configs.exp._eval.robomimic_eval import RobomimicEvalExpConfig
+from sim_pipeline.configs.exp._eval.evaluation import EvalExpConfig
+from sim_pipeline.configs.training._imitation_learning._offline_rl.iql_diffusion import IQLDiffusionTrainingConfig
+
+@dataclass
+class RobomimicEvalConfig(EvaluationConfig):
+    name: str ='iql_diffusion_push_coverage_300angled_mid'
+    env: BaseEnvConfig = RobomimicSquareEnvConfig()
+    exp: EvalExpConfig = RobomimicEvalExpConfig()
+    training: IQLDiffusionTrainingConfig = IQLDiffusionTrainingConfig()
