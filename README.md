@@ -1,8 +1,17 @@
+<img src="rise_fig.png" alt="fig1" />
+
+[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
+
+Code for the paper Using Non-Expert Data to Robustify Imitation Learning via Offline Reinforcement Learning.
+
+[Website](https://uwrobotlearning.github.io/RISE-offline/) | [Paper](https://arxiv.org/abs/2510.19495)
+
 ### Installation
 
 Clone repo
 
 ```
+git clone git@github.com:UWRobotLearning/RISE.git
 ```
 
 Install Dependencies
